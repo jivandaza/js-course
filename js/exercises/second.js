@@ -44,7 +44,7 @@ const removePattern = (text = "", pattern = "") =>
 console.log(invertString("Hello World!")); // should output "!dlroW olleH"
 console.log(invertString(1234)); // should throw an error as the argument is not a string
 console.log(invertString()); // You did not enter a valid string.
-countWords("hello world goodbye world", "world"); // should otput 2
+countWords("hello world goodbye world", "world"); // should output 2
 countWords("hello world goodbye world", 2); // should throw an error as both arguments need to be strings
 isPalindrome("salas"); // should output "The word "salas" is palindrome"
 isPalindrome("oso"); // should output "The word "oso" is palindrome"
