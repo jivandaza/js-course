@@ -6,8 +6,8 @@
 //get json data from API and print character names
 async function printCharacterNames() {
     let jsondata = await fetch(
-      "https://jsonplaceholder.typicode.com/todos/1"
-    ).then((json) => json.json());
+      "https://pokeapi.co/api/v2/pokemon/ditto"
+    ).then((json) => json.json())
     return jsondata;
 }
   
