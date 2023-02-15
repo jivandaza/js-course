@@ -1,0 +1,41 @@
+#responsive-js {
+  justify-content: center;
+}
+
+#responsive-js * {
+  margin: 3vh;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 5vw;
+}
+
+#responsive-js a {
+  text-decoration: none;
+  background-color: var(--text);
+  padding: 2vh;
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--background);
+  box-shadow: 0px 0px 8px 4px rgba(131, 131, 131, 0.7);
+  border: 0;
+  font-size: 5vw;
+  font-family: "Share Tech Mono", monospace;
+  outline: none;
+  transition: 0.5s;
+}
+
+#responsive-js a:hover {
+  box-shadow: 0px 0px 8px 4px rgba(224, 223, 223, 0.7);
+  background-color: var(--background);
+  color: var(--text);
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+
+#responsive-js a:active {
+  box-shadow: 0px 0px 8px 4px rgba(224, 223, 223, 0.7);
+  background-color: var(--background);
+  color: var(--text);
+  transition: 0.5s;
+  letter-spacing: 3px;
+}

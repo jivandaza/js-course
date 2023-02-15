@@ -1,0 +1,4 @@
+#hamburger-menu a.active {
+  background-color: var(--text);
+  color: var(--background);
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM EXERCISES</title>
+
+  <!-- Javascript Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png?">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="style/dom-exercise.css" />
+  <link rel="stylesheet" href="style/hamburger-menu.css" />
+  <link rel="stylesheet" href="style/scroll-spy.css" />
+  <link rel="stylesheet" href="style/toggle.css" />
+  <link rel="stylesheet" href="style/scroll.css" />
+  <link rel="stylesheet" href="style/user-online.css" />
+  <link rel="stylesheet" href="style/clock.css" />
+  <link rel="stylesheet" href="style/keyboard.css" />
+  <link rel="stylesheet" href="style/countdown.css" />
+  <link rel="stylesheet" href="style/responsive-js.css" />
+  <link rel="stylesheet" href="style/responsive-tester.css" />
+  <link rel="stylesheet" href="style/user-detection.css" />
+  <link rel="stylesheet" href="style/camera-detection.css" />
+  <link rel="stylesheet" href="style/user-location.css" />
+  <link rel="stylesheet" href="style/search.css" />
+  <link rel="stylesheet" href="style/raffle.css" />
+  <link rel="stylesheet" href="style/responsive-slider.css" />
+  <link rel="stylesheet" href="style/smart-video.css" />
+  <link rel="stylesheet" href="style/contact-form.css" />
+  <link rel="stylesheet" href="style/crud-table.css" />
+</head>
+<body>
+  <audio id="alarm-sound">
+    <source src="./audio/clock-alarm.mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <header>
+    <h1>DOM</h1>
+    <label id="toggle-colors">🌚</label>
+    <nav id="hamburger-menu"></nav>
+  </header>
+
+  <!-- Screen buttons -->
+  <button class="hamburger hamburger--vortex right" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button> 
+  <button type="button" class="scroll disabled">
+    <img src="./img/scrollicon.svg"/>
+  </button>
+
+  <main>
+    <section id="clocks"> 
+      <div class="clock">
+        <p class="timezone">Bogotá: </p> 
+        <p class="current-time"></p>
+        <div class="clock-functions">
+          <button type="button" class="clock-button clock-status">Stop Clock</button>
+          <button type="button" class="clock-button alarm-status">Play Alarm</button>
+        </div>
+      </div>
+      <div class="clock">
+        <p class="timezone">UTC: </p> 
+        <p class="current-time utc-time"></p>  
+        <div class="clock-functions">
+          <button type="button" class="clock-button clock-status">Stop Clock</button>
+          <button type="button" class="clock-button alarm-status">Play Alarm</button>
+        </div>
+      </div> 
+    </section>
+
+    <section id="keyboard-events">
+      <h1 id="instructions">Click the playground below and use your arrows to move:</h1>
+      <h1 id="not-desktop">This part is not supported on your device, you need to use fullscreen anhave a physical keyboard.</h1>
+      <canvas id="drawing-canvas" width="1000px" height="500px"></canvas>
+    </section>
+
+    <section id="countdown">
+      <h1>Select a date to see how long it will be until then:</h1>
+      <input type="date" class="date-selector" id="date-picker">
+      <button type="button" id="start-countdown">START</button>
+    </section>
+
+    <section id="responsive-js"></section>
+
+    <section id="responsive-tester">
+      <form id="responsive-form">
+        <input type="text" name="url" id="url" placeholder="Enter the URL" required>
+        <input type="number" name="width" id="width" placeholder="Width" required>
+        <input type="number" name="height" id="height" placeholder="Height" required>
+        <input name="submit" type="submit" value="Go Responsive" id="go-responsive">
+      </form>
+    </section>
+
+    <section id="user-detection"></section>
+    <section id="camera-detection"></section>
+    <section id="user-location"></section>
+
+    <section id="search">
+      <input type="search" name="filter" id="search-bar" placeholder="Enter search term...">
+      <div id="cards"></div>
+      <button type="button" id="pick-winner">Pick Winner</button>
+    </section>
+
+    <section id="slider-section">
+      <div class="slider">
+        <div class="slider-controls">
+          <button class="slider-control" id="prev">&laquo;</button>
+          <button class="slider-control" id="next">&raquo;</button>
+        </div>
+        <div class="slides">
+          <div class="slide active">
+            <img src="https://placeimg.com/600/400/animals" alt="animals image">
+           </div>
+          <div class="slide">
+            <img src="https://placeimg.com/600/400/tech" alt="tech image">
+          </div>
+          <div class="slide">
+            <img src="https://placeimg.com/600/400/arch" alt="architecture image">
+          </div>
+          <div class="slide">
+            <img src="https://placeimg.com/600/400/nature" alt="nature image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="smart-video">
+      <video loop muted src="img/smart-video.mp4" smart-video></video>
+    </section>
+
+    <section id="contact-form">
+      <form class="contact-form">
+        <legend>Send us a message</legend>
+        <input 
+          type="text" 
+          name="name" 
+          required placeholder="What's your full name" 
+          title="The name can only contain letters and white spaces" 
+          pattern="^[a-zA-Züáéíóú]+ [a-zA-Züáéíóú]+( [a-zA-Züáéíóú]+)*$">
+        <input type="email" name="email" required placeholder="What's your email address" title="Incorrect email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+        <input type="text" name="subject" required placeholder="Subject" title="Subject is required" maxlength="50">
+        <textarea name="message" placeholder="Let us know your thoughts!" cols="50" rows="5" required title="Message can't be empty or longer than 255 characters" data-pattern="^.{1,255}$"></textarea>
+        <input type="submit" value="Send">
+        <div class="contact-form-loader none">
+          <img src="img/loader.svg" alt="Loading...">
+        </div>
+        <div class="contact-form-response none"></div>
+      </form>
+    </section>
+
+    <section id="text-reader">
+      <form class="contact-form" id="reader">
+        <legend>Text reader</legend>
+        <select name="voices" id="voices"></select>
+        <textarea name="text" placeholder="Write your text here" cols="50" rows="5" required title="Text to read can't be empty or longer than 255 characters" data-pattern="^.{1,255}$"></textarea>
+        <input type="submit" value="Speak">
+      </form>
+    </section>
+
+    <section id="crud">
+      <form class="contact-form crud-form" id="add-user">
+        <legend class="crud-title">Add user</legend>
+        <input type="text" name="name" required placeholder="Enter your name">
+        <input type="text" name="username" required placeholder="Enter your username">
+        <input type="email" name="email" required placeholder="Enter your email" title="Incorrect email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+        <input type="submit" value="Add" name="submit">
+        <button type="button" name="edit" class="not-visible">Edit</button>
+      </form>
+      <h1 id="crud-list">Current users</h1>
+      <table class="crud-table" id="crud-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead> 
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="username"></td>
+        <td class="email"></td>
+        <td>
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </td>
+      </tr>
+    </template>
+  </main>
+
+  <!-- Modules script -->
+  <script src="js/dom-exercises/module.js" type="module"></script>
+  <script src="js/dom-exercises/crud.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "title": "Grind it",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Roll it",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Light it",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Enjoy it",
+      "completed": false
+    }
+  ],
+  "users": [
+    {
+      "name": "Daza GGG",
+      "username": "Jivandaza",
+      "email": "daza@fakemeail.biz",
+      "id": 2
+    },
+    {
+      "name": "Uncle Snoop",
+      "username": "Snoop",
+      "email": "snoop@unclesnoop.net",
+      "id": 3
+    },
+    {
+      "name": "Daza ivan",
+      "username": "jidaza",
+      "email": "daza@fakemeail.biz",
+      "id": 1
+    },
+    {
+      "name": "Jivandaza",
+      "username": "Dazah",
+      "email": "jivan@fakemeail.biz",
+      "id": 5
+    }
+  ]
+}

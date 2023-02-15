@@ -1,0 +1,11 @@
+#camera-detection video {
+  max-width: 90vw;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 8px 4px rgba(131, 131, 131, 0.7);
+}
+
+#camera-detection h1 {
+  margin: 3vh;
+}

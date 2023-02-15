@@ -1,0 +1,38 @@
+:root {
+  --keyboard-bg: rgb(226, 245, 255);
+  --keyboard-text: rgb(0, 41, 70);
+}
+
+#keyboard-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#not-desktop {
+  display: none;
+}
+
+#drawing-canvas {
+  background-color: var(--keyboard-text);
+  border-radius: 15px;
+  /* box-shadow: 1px 0px 38px 11px rgba(0, 0, 0, 0.51) inset; */
+  background: linear-gradient(225deg, #cbdde6, #f2ffff);
+  box-shadow: 0px 0px 6px 2px rgba(224, 247, 250, 0.5);
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 1100px) {
+  #instructions {
+    display: none;
+  }
+  #drawing-canvas {
+    display: none;
+  }
+  #not-desktop {
+    display: block;
+    margin-left: 0 auto;
+    max-width: 80%;
+  }
+}

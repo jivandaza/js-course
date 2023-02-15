@@ -1,0 +1,53 @@
+#toggle-colors {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.9;
+  margin: 0;
+  right: 1vw;
+  bottom: 80px;
+  font-size: 50px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 999;
+}
+
+#toggle-colors:hover {
+  opacity: 1;
+  font-size: 51px;
+}
+
+.clock.light {
+  background: linear-gradient(145deg, #cadee1, #f0ffff);
+  box-shadow: 20px 20px 60px #bed2d5, -20px -20px 60px #ffffff;
+}
+
+header.light {
+  color: #263238;
+  background-color: #e0f7fa;
+}
+
+section.light {
+  color: #263238;
+  background-color: #e0f7fa;
+}
+
+#drawing-canvas.light {
+  box-shadow: -20px 20px 60px #c0d0d9, 20px -20px 60px #ffffff;
+}
+
+.hamburger.light {
+  opacity: 0.9;
+}
+
+.hamburger.light:hover {
+  background-color: var(--background);
+  opacity: 1;
+}
+
+.hamburger.light.is-active:hover {
+  background-color: var(--text);
+}

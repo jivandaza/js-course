@@ -1,0 +1,58 @@
+:root {
+    --text: #e0f7fa;
+    --background: #263238; 
+}
+
+:root,
+html,
+body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    background-color: var(--background);
+    padding: 1rem;
+    font-family: "Share Tech Mono", monospace;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: var(--text);
+    margin: 0;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    z-index: 998;
+}
+
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h1 {
+    font-family: "Share Tech Mono", monospace;
+}
+
+section {
+    display: flex;
+    min-height: 100vh;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}

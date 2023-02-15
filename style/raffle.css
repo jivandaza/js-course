@@ -1,0 +1,41 @@
+#search button {
+  height: 7vh;
+  width: 40%;
+  box-shadow: 0px 0px 8px 4px rgba(131, 131, 131, 0.7);
+  border: 0;
+  font-size: 1.3rem;
+  font-family: "Share Tech Mono", monospace;
+  outline: none;
+  transition: 0.5s;
+  padding: 10px;
+  opacity: 0.8;
+  margin: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search button:hover {
+  box-shadow: 0px 0px 8px 4px rgba(224, 223, 223, 0.7);
+  background-color: #1b2124;
+  color: var(--text);
+  transition: 0.5s;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+#search button:active {
+  box-shadow: 0px 0px 8px 4px rgba(116, 116, 116, 0.7);
+  background-color: #1b2124;
+  color: var(--text);
+  transition: 0.5s;
+  letter-spacing: 5px;
+}
+
+.winner {
+  grid-column: 1/-1;
+}
+
+
+
+

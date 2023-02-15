@@ -1,0 +1,39 @@
+#crud-table * {
+  padding: 1vw;
+}
+
+.contact-form button[type="button"] {
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+}
+
+#crud-table {
+  border-collapse: collapse;
+  max-width: 80vw;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+#crud-list {
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
+#crud-table tr:nth-child(even) {
+  background-color: #eee;
+  color: black;
+}
+#crud-table tr:nth-child(odd) {
+  background-color: #fff;
+  color: black;
+}
+#crud-table th {
+  color: white;
+  background-color: black;
+  text-align: left;
+}
+
+.not-visible {
+  display: none;
+}
